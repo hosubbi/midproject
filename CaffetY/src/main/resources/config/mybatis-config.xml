@@ -22,6 +22,7 @@
 		<typeAlias type="co.caffet.vo.CafeVO" alias="CafeVO"/>
 		<typeAlias type="co.caffet.vo.MemberVO" alias="MemberVO"/>
 				<typeAlias type="co.caffet.vo.ItemVO" alias="ItemVO"/>
+<<<<<<< HEAD
 		
 		
 	</typeAliases>
@@ -43,6 +44,37 @@
 		<mapper resource="co/caffet/mapper/CafeMapper.xml" />
 		<mapper resource="co/caffet/mapper/MemberMapper.xml" />
 		<mapper resource="co/caffet/mapper/ItemMapper.xml" />
+=======
+								<typeAlias type="co.caffet.vo.CommentVO" alias="CommentVO"/>
+																<typeAlias type="co.caffet.vo.BoardVO" alias="BoardVO"/>
+								
+				
+		
+		
+	</typeAliases>
+	
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	
+	
+	<mappers>
+		<mapper resource="co/caffet/mapper/CafeMapper.xml" />
+		<mapper resource="co/caffet/mapper/MemberMapper.xml" />
+		<mapper resource="co/caffet/mapper/ItemMapper.xml" />
+				<mapper resource="co/caffet/mapper/CommentsMapper.xml" />
+								<mapper resource="co/caffet/mapper/BoardMapper.xml" />
+				
+		
+>>>>>>> branch 'main' of https://github.com/hosubbi/midproject.git
 		
 		
 		

@@ -34,6 +34,7 @@ public class ItemServiceMybatis implements ItemService{
 		int r = mapper.insertItem(vo);
 		return r == 1;
 	}
+<<<<<<< HEAD
 
 	@Override
 	public boolean itemModify(ItemVO vo) {
@@ -60,5 +61,7 @@ public class ItemServiceMybatis implements ItemService{
 	public List<ItemVO> etcTops() {
 		return mapper.etcTopList();
 	}
+=======
+>>>>>>> branch 'main' of https://github.com/hosubbi/midproject.git
 	
 }

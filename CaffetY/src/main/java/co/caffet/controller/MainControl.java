@@ -17,9 +17,15 @@ public class MainControl implements Control {
 
 	@Override
 	public String exec(HttpServletRequest request, HttpServletResponse response) {
+<<<<<<< HEAD
 		
 		CafeService service = new CafeServiceMybatis();
 		List<CafeVO> list = service.cafeList();
+=======
+		String all = "all";
+		CafeService service = new CafeServiceMybatis();
+		List<CafeVO> list = service.cafeList(all);
+>>>>>>> branch 'main' of https://github.com/hosubbi/midproject.git
 		
 		request.setAttribute("list", list);
 		

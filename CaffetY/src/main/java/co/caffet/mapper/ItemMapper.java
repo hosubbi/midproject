@@ -17,6 +17,7 @@ public interface ItemMapper {
 	//등록
 	public int insertItem(ItemVO vo);
 	
+<<<<<<< HEAD
 	//수정
 	public int updateItem(ItemVO vo);
 	
@@ -27,5 +28,7 @@ public interface ItemMapper {
 	public List<ItemVO> foodList();
 	
 	public List<ItemVO> etcTopList();
+=======
+>>>>>>> branch 'main' of https://github.com/hosubbi/midproject.git
 	
 }
